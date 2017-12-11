@@ -50,11 +50,11 @@ describe('Updating records', () => {
     );
   });
 
-  it('A user can have their postcount incremented by 1', (done) => {
-    User.update({ name: 'Joe'}, { $inc: { postCount: 1 } })
-    .then(() => User.find({}))
-    .then(users => {
-      assert(users[0].postCount === 1);
+  it('A user can have their likes incremented by 1', (done) => {
+    User.update({ name: 'Joe'}, { $inc: { likes: 1 } })
+    .then(() => User.findOne({ name: 'Joe' }))
+    .then(user => {
+      assert(user.likes === 1);
       done();
     });
   });
