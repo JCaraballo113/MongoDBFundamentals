@@ -4,5 +4,8 @@
 
 Enjoy :)
 
-# Forenotes
-This app uses mochaJS as it's test runner!
+# Technologies used
+This app uses:
+* [NodeJS](https://nodejs.org/en/)
+* [mochaJS](https://mochajs.org/) 
+* [MongoDB](https://www.mongodb.com/)
