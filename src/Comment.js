@@ -7,7 +7,8 @@ const CommentSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'user'
   }
-});
+},
+{ usePushEach: true });
 
 const Comment = mongoose.model('comment', CommentSchema);
 
